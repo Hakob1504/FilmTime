@@ -1,0 +1,76 @@
+.home{
+    padding: 20px 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: black;
+}
+
+.home_light{
+    background-color: #fff;
+}
+
+.films_div{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    grid-template-columns: repeat(4, 220px);
+}
+
+.btns_div{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.next_btn{
+    width: 110px;
+    padding: 5px 16px;
+    background-color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+.next_btn:hover{
+    background-color: mediumpurple;
+    color: rgb(255, 255, 106);
+}
+
+.prev_btn{
+    width: 110px;
+    padding: 5px 16px;
+    background-color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.prev_btn:hover{
+    background-color: rgb(255, 255, 106);
+    color: mediumpurple;
+}
+
+.btns_div button:disabled{
+    background-color: #fff;
+    color: rgb(198, 198, 198);
+}
+
+@media screen and (max-width: 1035px) {
+    .films_div{
+        grid-template-columns: repeat(4, 105px);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .films_div{
+        grid-template-columns: repeat(4, 105px);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .films_div{
+        grid-template-columns: repeat(2, 160px);
+    }
+}

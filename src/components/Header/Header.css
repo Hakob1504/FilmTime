@@ -1,0 +1,37 @@
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.header_light{
+    background-color: #fff;
+}
+
+.header_part_1 {
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    background-color: mediumpurple;
+    color: black;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    box-shadow: white 1px 1px 5px;
+}
+
+.actions_div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+@media screen and (max-width: 580px) {
+    .header_part_1{
+        flex-direction: column;
+    }
+}

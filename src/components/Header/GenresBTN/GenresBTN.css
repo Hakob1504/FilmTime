@@ -1,0 +1,61 @@
+.genres_btn{
+    max-width: 150px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    background-color: mediumpurple;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 3px 7px;
+    border-radius: 10px;
+    transition: 0.2s linear;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.genres_btn:hover{
+    background-color: white;
+    color: mediumpurple;
+}
+
+.genres_btn_light{
+    background-color: white;
+    border: 1px solid mediumpurple;
+    color: mediumpurple;
+}
+
+.genres_btn_light:hover{
+    background-color: mediumpurple;
+    color: white;
+}
+
+nav .active{
+    background-color: white;
+    color: mediumpurple;
+}
+
+.nav_light .active{
+    background-color: mediumpurple;
+    color: white;
+}
+
+.genres_btn span{
+    font-size: 16px;
+}
+
+@media screen and (max-width: 945px) {
+    .genres_btn span {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .genres_btn{
+        height: 30px;
+    }
+    .genres_btn span{
+        font-size: 8px;
+    }   
+}
